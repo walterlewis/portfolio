@@ -9,11 +9,51 @@ const bigHeader =
   <h1>Welcome to walter's portfolio!</h1>
 ;
 
+
 const greeting = <h2>Hi myki :)</h2>;
+
+const projects = ["CSE443 neural net mapping", 
+  "2d Unity action game",
+  "3d turn based unity adventure game",
+  "Weather forecast web application",
+  "Agile developed course library project",
+  "and most importantly....this website!",  
+];
+
+const projectsList = 
+  projects.map(
+    (project) =>
+    <li>{project}</li>
+);
+
+const table = 
+  <div>
+    I will be including the projects below:
+  </div>
+
+class TableProjects extends React.Component {
+  render() {
+    return(
+      <div>
+        {table}
+        <br></br>
+        <ul>
+          {projectsList}
+        </ul>
+      </div>
+    );
+  }
+}
 
 class NavBar extends React.Component {
   render() {
-    return (bigHeader);
+    return (
+      <div>
+        {bigHeader}
+        {greeting}
+        <TableProjects />
+      </div>
+      );
   } 
 }
 
