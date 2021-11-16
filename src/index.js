@@ -3,11 +3,21 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import react from 'react';
+
+const bigHeader = 
+  <h1>This is my portfolio</h1>
+;
+
+class NavBar extends React.Component {
+  render() {
+    return (bigHeader);
+  } 
+}
+
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <NavBar/>,
   document.getElementById('root')
 );
 
