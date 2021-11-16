@@ -6,8 +6,10 @@ import reportWebVitals from './reportWebVitals';
 import react from 'react';
 
 const bigHeader = 
-  <h1>This is my portfolio</h1>
+  <h1>Welcome to walter's portfolio!</h1>
 ;
+
+const greeting = <h2>Hi myki :)</h2>;
 
 class NavBar extends React.Component {
   render() {
