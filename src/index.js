@@ -1,16 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 import react from 'react';
+import CardSpace from './Projects';
+import NavBar from './NavBar';
 
 const bigHeader = 
-  <h1>Welcome to walter's portfolio!</h1>
+  <h1>Welcome to Walter's portfolio!</h1>
 ;
 
 
-const greeting = <h2>Hi myki :)</h2>;
+// const greeting = <h2>Hi myki :)</h2>;
 
 const projects = ["CSE443 neural net mapping", 
   "2d Unity action game",
@@ -45,21 +46,16 @@ class TableProjects extends React.Component {
   }
 }
 
-class NavBar extends React.Component {
-  render() {
-    return (
-      <div>
-        {bigHeader}
-        {greeting}
-        <TableProjects />
-      </div>
-      );
-  } 
-}
+
 
 
 ReactDOM.render(
-  <NavBar/>,
+  <div>
+    <NavBar />
+    <TableProjects />
+    <CardSpace />
+  </div>
+  ,
   document.getElementById('root')
 );
 
