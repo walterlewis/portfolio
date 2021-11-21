@@ -8,9 +8,10 @@ const bigHeader =
 class NavBar extends React.Component {
     render() {
         return (
-            <div>
-                {bigHeader}
-                NavBar
+            <div class="h-100 p-5 bg-light border rounded-3">
+                <h2>Add borders</h2>
+                <p>{bigHeader}</p>
+                <button class="btn btn-outline-secondary" type="button">Example button</button>
             </div>
         );
     }

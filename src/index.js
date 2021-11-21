@@ -2,45 +2,46 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import react from 'react';
 import CardSpace from './Projects';
 import NavBar from './NavBar';
+import { Footer } from './Footer';
+import { SummarySpace } from './Summary';
 
-const bigHeader = 
-  <h1>Welcome to Walter's portfolio!</h1>
-;
 
 
 // const greeting = <h2>Hi myki :)</h2>;
 
-const projects = ["CSE443 neural net mapping", 
-  "2d Unity action game",
-  "3d turn based unity adventure game",
-  "Weather forecast web application",
-  "Agile developed course library project",
-  "and most importantly....this website!",  
-];
 
-const projectsList = 
-  projects.map(
-    (project) =>
-    <li>{project}</li>
-);
 
-const table = 
-  <div>
-    I will be including the projects below:
-  </div>
+// class CarouselCards extends React.Component {
+//   render() {
+//     return(
+//         <div></div>
+//     );
+//   }
+// }
 
-class TableProjects extends React.Component {
+
+class PageLayout extends React.Component {
   render() {
     return(
-      <div>
-        {table}
-        <br></br>
-        <ul>
-          {projectsList}
-        </ul>
+      <div class="container-fluid">
+          <div class="row" id="introSpace">
+            <div class="col-md">
+              <NavBar />
+            </div>
+            <div class="col-md" id="summarySpace">
+              <SummarySpace />
+            </div>
+          </div>
+          <div class="row" id="projectSpace">
+            <CardSpace/>
+          </div>
+          <div class="row" id="footerSpace">
+            <div class="col-md">
+              <Footer />
+            </div>
+          </div>
       </div>
     );
   }
@@ -48,14 +49,8 @@ class TableProjects extends React.Component {
 
 
 
-
 ReactDOM.render(
-  <div>
-    <NavBar />
-    <TableProjects />
-    <CardSpace />
-  </div>
-  ,
+  <PageLayout />,
   document.getElementById('root')
 );
 
