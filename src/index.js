@@ -1,3 +1,5 @@
+// Copyright 2021 Walter Lewis
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
@@ -47,6 +49,13 @@ class PageLayout extends React.Component {
   }
 }
 
+
+// deploy to website:
+// https://blog.heroku.com/deploying-react-with-zero-configuration
+// commands:
+// git add .
+// git commit -m "react-create-app on Heroku"
+// git push heroku master
 
 
 ReactDOM.render(
