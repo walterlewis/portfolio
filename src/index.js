@@ -58,6 +58,13 @@ class PageLayout extends React.Component {
 // git push heroku master
 
 
+// to deploy to website
+// https://medium.com/swlh/create-deploy-host-react-app-for-free-github-pages-c1f41bed6497
+// git add .
+// git commit -m "commit message"
+// git push
+// npm run deploy
+
 ReactDOM.render(
   <PageLayout />,
   document.getElementById('root')
