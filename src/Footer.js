@@ -1,23 +1,25 @@
 import React from 'react';
-import logo from './linkedinLogo.png';
+import "./Footer.css";
+import LinkedInlogo from './linkedinLogo.png';
+import gitLogo from './githubLogo.png';
 
 
 // smaller badge components with links to socials
 export class LinkedinBadge extends React.Component {
     render() {
         return (
-            <a href="https://www.linkedin.com/in/walter-lewis-46163b1b7?trk=profile-badge">
-                <img height="50" width="50" src={logo} alt="logo"/>
+            <a href="https://www.linkedin.com/in/walter-lewis-46163b1b7?trk=profile-badge" target="_blank" rel="noopener noreferrer">
+                <img class="LinkedBadgeFooter" src={LinkedInlogo} alt="logo"/>
             </a>    
         );
     }
 }
 
-export class gitHubBadge extends React.Component {
+export class GitBadge extends React.Component {
     render() {
         return (
-            <a href="https://www.linkedin.com/in/walter-lewis-46163b1b7?trk=profile-badge">
-                <img height="50" width="50" src={logo} alt="logo"/>
+            <a href="https://github.com/walterlewis/portfolio" target="_blank" rel="noopener noreferrer">
+                <img class="LinkedBadgeFooter" src={gitLogo} alt="logo"/>
             </a>    
         );
     }
@@ -40,6 +42,7 @@ export class Footer extends React.Component {
                         <li class="ms-3">
                             <div class="text-muted">
                                 <LinkedinBadge/>
+                                <GitBadge/>
                             </div>
                         </li>
                     </ul>
