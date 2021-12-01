@@ -41,8 +41,8 @@ export class Footer extends React.Component {
                     <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
                         <li class="ms-3">
                             <div class="text-muted">
-                                <LinkedinBadge/>
                                 <GitBadge/>
+                                <LinkedinBadge/>
                             </div>
                         </li>
                     </ul>
